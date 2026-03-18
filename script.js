@@ -170,45 +170,29 @@ const results={
 BC:{
 title:"🐈‍⬛ Black Cat",
 desc:"You're independent, selective, and a little mysterious. You don't need much — just your space, your vibe, and maybe one or two people who actually get you. You observe more than you speak, and that's your superpower.",
-compat:{
-GR:"🐕 Golden Retriever — Their warmth softens your edges. They give you affection without crowding you, and you give them the depth they didn't know they needed.",
-DB:"🐕‍🦺 Doberman — Two self-sufficient forces who respect each other's space. You bond through loyalty and trust, not constant contact.",
-OC:"🐈 Orange Cat — They pull you out of your shell in the best way. Chaotic but loveable — somehow it works."
-}
+match:"🐕 Golden Retriever — Their warmth softens your edges. They give you affection without crowding you, and you give them the depth they didn't know they needed."
 },
 GR:{
 title:"🐕 Golden Retriever",
 desc:"You lead with love. You're the person who remembers birthdays, checks in when someone's quiet, and genuinely cares how people feel. Your warmth isn't a strategy — it's just who you are.",
-compat:{
-BC:"🐈‍⬛ Black Cat — They're a challenge in the best way. Your warmth draws them in slowly, and their depth keeps you intrigued.",
-DB:"🐕‍🦺 Doberman — They protect, you nurture. A balanced duo that covers each other's blind spots.",
-OC:"🐈 Orange Cat — Pure energy and joy together. You're the heart, they're the chaos — unbeatable combo."
-}
+match:"🐈‍⬛ Black Cat — They're a challenge in the best way. Your warmth draws them in slowly, and their depth keeps you intrigued."
 },
 DB:{
 title:"🐕‍🦺 Doberman",
 desc:"You're focused, strategic, and quietly protective of the people you care about. You don't talk much, but when you do, people listen. You move with purpose and you expect the same from others.",
-compat:{
-GR:"🐕 Golden Retriever — They remind you that not everything needs to be optimized. Their warmth grounds your intensity.",
-BC:"🐈‍⬛ Black Cat — Mutual respect, zero drama. You both value loyalty and space — a rare and solid match.",
-OC:"🐈 Orange Cat — Opposites that somehow click. They loosen you up; you give them direction."
-}
+match:"🐈 Orange Cat — Opposites that click. They bring the spontaneity you secretly need; you give them the steady ground they didn't know they wanted."
 },
 OC:{
 title:"🐈 Orange Cat",
 desc:"You're chaotic, curious, and genuinely fun to be around. You don't follow rules you didn't agree to, and you live fully in the moment. People never know what you'll do next — and honestly, neither do you.",
-compat:{
-GR:"🐕 Golden Retriever — They keep up with your energy and actually enjoy it. Plus they'll make sure you eat and sleep.",
-DB:"🐕‍🦺 Doberman — They give you structure without killing your vibe. You give them a reason to loosen up.",
-BC:"🐈‍⬛ Black Cat — Chaotic meets mysterious. You're endlessly curious about each other, which keeps things interesting."
-}
+match:"🐕‍🦺 Doberman — They give you structure without killing your vibe. You give them a reason to loosen up. Chaotic meets composed — somehow it's perfect."
 }
 };
 
 title.textContent=results[highest].title;
 desc.textContent=results[highest].desc;
 
-const matchInfo=results[highest].compat[match];
+const matchInfo=results[highest].match;
 if(matchInfo){
 compatTitle.textContent=matchInfo.split(" — ")[0];
 compatDesc.textContent=matchInfo.split(" — ")[1];
